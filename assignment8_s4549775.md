@@ -78,6 +78,18 @@ The given graph is homeomorphic to $K_{3, 3}$. By contracting the edges $\{a, b\
 
 # 20
 
+The chromatic number of the graph is $\chi(G) = 3$. $\chi(G) \geq 3$, because $b, c, g$ form a triangle. $\chi(G) \leq 3$, because I can give a coloring with 3 colors.
+
+$\begin{aligned}
+	color(a) &= w\\
+	color(b) &= b\\
+	color(c) &= w\\
+	color(d) &= b\\
+	color(e) &= w\\
+	color(f) &= b\\
+	color(g) &= r\\
+\end{aligned}$
+
 # 21
 ## a
 ## b
