@@ -134,3 +134,4 @@ G:
 \end{tikzpicture}
 
 ## b
+$\chi(H) \geq 4$, because $H$ contains the subgraph $K_4$.
