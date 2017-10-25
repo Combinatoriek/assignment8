@@ -74,6 +74,8 @@ Planar representation:
 
 # 19
 
+The given graph is homeomorphic to $K_{3, 3}$. By contracting the edges $\{a, b\}, \{c, d\}, \{e, f\}, \{g, h\}, \{i, j\}, \{k, l\}$ we get $K_{3, 3}$.
+
 # 20
 
 # 21
