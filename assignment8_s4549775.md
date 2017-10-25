@@ -96,4 +96,22 @@ $\begin{aligned}
 
 # 22
 ## a
+A nonplanar graph contains a subgraph homeomorphic to $K_5$, or $K_{3, 3}$. Because $\lambda(K_5) \neq 1$, and $\lambda(K_{3, 3}) \neq 1$, we need to add a vertex, so we start with $K_5$, which is smaller, because we want $|V|$ to be minimal. We add one vertex, connected to one other vertex, so $\lambda(G) = 1$:
+
+G:
+\begin{tikzpicture}[
+	every node/.style={circle, draw},
+]
+	\foreach \vx in {1, ..., 5} {
+		\node at (\vx * 360 / 5: 1) (\vx) {};
+	}
+	\foreach \vx in {1, ..., 5} {
+		\foreach \vy  in {\vx, ..., 5} {
+			\draw (\vx) -- (\vy);
+		}
+	}
+	\node at (1: 2) (0) {};
+	\draw (0) -- (5);
+\end{tikzpicture}
+
 ## b
