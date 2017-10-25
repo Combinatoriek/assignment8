@@ -29,10 +29,14 @@ $deg(v_2) = deg(v_4) = 4$, but $\{v_2, v_3\} \not \in E$.
 * $\kappa(G) \leq \lambda(G) < min_{v \in V} deg(v)$
 
 ## d
-* $\kappa(G) =$
-* $\lambda(G) =$
-* $min_{v \in V} deg(v) =$
-* $\kappa(G) \lambda(G) min_{v \in V} deg(v)$
+* $\kappa(G) = 4$
+
+	vertex cut: $\{b, c, d, f\}$
+* $\lambda(G) = 4$
+
+	edge cut: $\{\{a, d\}, \{a, b\}, \{a, c\}, \{a, f\}\}$
+* $min_{v \in V} deg(v) = 4$
+* $\kappa(G) \leq \lambda(G) \leq min_{v \in V} deg(v)$
 
 # 16
 
