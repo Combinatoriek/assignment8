@@ -6,6 +6,9 @@ author: Hendrik Werner
 date: \today
 fontsize: 12pt
 geometry: margin=5em
+header-includes:
+	- \usepackage{tikz}
+	- \usetikzlibrary{positioning}
 ---
 
 # 13
@@ -47,6 +50,27 @@ An Euler path does exists, because $deg(a), deg(d)$ are uneven, and all other ve
 # 17
 
 # 18
+
+The graph does not contain subgraphs homeomorphic to $K_5$, or $K_{3, 3}$, so it is planar.
+
+Planar representation:
+\begin{tikzpicture}[
+	every node/.style={circle, draw, minimum width=2em},
+]
+	\node (a) {a};
+	\node[below=of a] (e) {e};
+	\node[left=of e] (b) {b};
+	\node[left=of b] (d) {d};
+	\node[right=of e] (f) {f};
+	\node[below=of e] (c) {c};
+	\draw (a) -- (d);
+	\draw (a) -- (f);
+	\draw (b) -- (d);
+	\draw (b) -- (e);
+	\draw (c) -- (d);
+	\draw (c) -- (e);
+	\draw (c) -- (f);
+\end{tikzpicture}
 
 # 19
 
