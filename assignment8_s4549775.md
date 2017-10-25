@@ -93,6 +93,25 @@ $\begin{aligned}
 # 21
 ## a
 ## b
+We cannot reduce the chromatic number by removing a single vertex. The graph contains 5 triangles, and by removing any edge, we can only remove a single triangle, so $\chi(G) \geq 3$. I can give a coloring with 3 colors, so $\chi(G) \leq 3$. $\chi(G) = 3$
+
+$\begin{aligned}
+	color(a) &= b &
+	color(b) &= r\\
+	color(c) &= w &
+	color(d) &= w\\
+	color(e) &= r &
+	color(f) &= b\\
+	color(g) &= w &
+	color(h) &= r\\
+	color(i) &= b &
+	color(j) &= b\\
+	color(k) &= r &
+	color(l) &= w\\
+	color(m) &= w &
+	color(n) &= r\\
+	color(o) &= b &
+\end{aligned}$
 
 # 22
 ## a
