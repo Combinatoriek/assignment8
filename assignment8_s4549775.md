@@ -40,6 +40,10 @@ $deg(v_2) = deg(v_4) = 4$, but $\{v_2, v_3\} \not \in E$.
 
 # 16
 
+There does not exist an Euler circuit, because $deg(a) \mod 2 = 1$. For an Euler path to exist $\forall v \in V deg(v) \mod 2 = 0$ must hold.
+
+An Euler path does exists, because $deg(a), deg(d)$ are uneven, and all other vertices have an even degree. Euler paths exist if there are exactly two vertices of uneven degree. An Euler path is: $a, b, d, b, c, d, c, a, d$.
+
 # 17
 
 # 18
