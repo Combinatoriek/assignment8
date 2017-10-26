@@ -174,3 +174,7 @@ G:
 
 ## b
 $\chi(H) \geq 4$, because $H$ contains the subgraph $K_4$.
+
+$\chi(G) \leq 4$, because the graph is planar.
+
+Putting these facts together we get that $\chi(G) = 4$.
