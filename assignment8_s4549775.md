@@ -131,6 +131,37 @@ $\begin{aligned}
 
 # 21
 ## a
+$\chi(G) \geq 4$, because the subgraph induced by the vertices $\{b, c, h, i\}$ is $K_4$.
+
+\begin{tikzpicture}[
+	scale=2,
+	every node/.style={draw},
+]
+	\foreach[count=\vi] \vx in {a, ..., i} {
+		\node at (\vi * 360 / 9: 1) (\vx) {\vx};
+	}
+	\draw (a) -- (b);
+	\draw (a) -- (g);
+	\draw (a) -- (h);
+	\draw (a) -- (i);
+	\draw (b) -- (c);
+	\draw (b) -- (h);
+	\draw (b) -- (i);
+	\draw (c) -- (d);
+	\draw (c) -- (f);
+	\draw (c) -- (g);
+	\draw (c) -- (h);
+	\draw (c) -- (i);
+	\draw (d) -- (e);
+	\draw (d) -- (g);
+	\draw (d) -- (i);
+	\draw (e) -- (f);
+	\draw (e) -- (i);
+	\draw (f) -- (g);
+	\draw (g) -- (h);
+	\draw (h) -- (i);
+\end{tikzpicture}
+
 ## b
 We cannot reduce the chromatic number by removing a single vertex. The graph contains 5 triangles, and by removing any edge, we can only remove a single triangle, so $\chi(G) \geq 3$. I can give a coloring with 3 colors, so $\chi(G) \leq 3$. $\chi(G) = 3$
 
