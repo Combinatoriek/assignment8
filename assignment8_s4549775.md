@@ -47,6 +47,8 @@ There are 61 paths of length 5 between every two different vertices in $K_4$.
 
 	edge cut: $\{\{a, b\}, \{k, l\}\}$
 * $min_{v \in V} deg(v) = 3$
+
+	$deg(a) = 3$
 * $\kappa(G) \leq \lambda(G) < min_{v \in V} deg(v)$
 
 ## d
@@ -57,6 +59,8 @@ There are 61 paths of length 5 between every two different vertices in $K_4$.
 
 	edge cut: $\{\{a, d\}, \{a, b\}, \{a, c\}, \{a, f\}\}$
 * $min_{v \in V} deg(v) = 4$
+
+	$deg(a) = 4$
 * $\kappa(G) \leq \lambda(G) \leq min_{v \in V} deg(v)$
 
 # 16
