@@ -9,6 +9,7 @@ geometry: margin=5em
 header-includes:
 	- \usepackage{tikz}
 	- \usetikzlibrary{positioning}
+	- \usetikzlibrary{shapes}
 ---
 
 # 13
@@ -135,14 +136,20 @@ $\begin{aligned}
 
 # 21
 ## a
-$\chi(G) \geq 4$, because the subgraph induced by the vertices $\{b, c, h, i\}$ is $K_4$.
+$\chi(G) \geq 4$, because the subgraph induced by the vertices $\{b, c, h, i\}$ is $K_4$. $\chi(G) \leq 4$, as we can make a coloring with 4 colors. So $\chi(G) = 4$. If we want to reduce this number, we need to remove one of $\{b, c, h, i\}$, as they induce $K_4$, for which $\chi(K_4) = 4$.
 
 \begin{tikzpicture}[
 	scale=2,
 	every node/.style={draw},
+	b/.style={star},
+	d/.style={circle},
+	f/.style={circle},
+	g/.style={diamond},
+	h/.style={circle},
+	i/.style={diamond},
 ]
 	\foreach[count=\vi] \vx in {a, ..., i} {
-		\node at (\vi * 360 / 9: 1) (\vx) {\vx};
+		\node[\vx/.try] at (\vi * 360 / 9: 1) (\vx) {\vx};
 	}
 	\draw (a) -- (b);
 	\draw (a) -- (g);
@@ -165,6 +172,8 @@ $\chi(G) \geq 4$, because the subgraph induced by the vertices $\{b, c, h, i\}$ 
 	\draw (g) -- (h);
 	\draw (h) -- (i);
 \end{tikzpicture}
+
+As is evident from the coloring given, by removing $b$, $\chi(G)$ is reduced to 3.
 
 ## b
 We cannot reduce the chromatic number by removing a single vertex. The graph contains 5 triangles, and by removing any edge, we can only remove a single triangle, so $\chi(G) \geq 3$. I can give a coloring with 3 colors, so $\chi(G) \leq 3$. $\chi(G) = 3$
