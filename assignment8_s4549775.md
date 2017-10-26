@@ -67,6 +67,25 @@ An Euler path does exists, because $deg(a), deg(d)$ are uneven, and all other ve
 
 # 17
 
+For $n = 4$ such a graph does not exist, according to Dirac's theorem. For $n = 5$ we can construct a graph.
+
+\begin{tikzpicture}[
+	scale=2,
+	every node/.style={circle, draw},
+]
+	\node at (1, 1) (0) {0};
+	\node at (0, 2) (1) {1};
+	\node at (2, 2) (2) {2};
+	\node at (0, 0) (3) {3};
+	\node at (2, 0) (4) {4};
+	\draw (0) -- (1);
+	\draw (0) -- (2);
+	\draw (0) -- (3);
+	\draw (0) -- (4);
+	\draw (1) -- (3);
+	\draw (2) -- (4);
+\end{tikzpicture}
+
 # 18
 
 The graph does not contain subgraphs homeomorphic to $K_5$, or $K_{3, 3}$, so it is planar.
