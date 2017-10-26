@@ -116,7 +116,7 @@ Planar representation:
 
 # 19
 
-The given graph is homeomorphic to $K_{3, 3}$. It can be contructed by adding the elementary subdivisions $\{b, d, f, h, j, l\}$ to $K_{3, 3}$.
+The given graph is homeomorphic to $K_{3, 3}$. It can be constructed by adding the elementary subdivisions $\{b, d, f, h, j, l\}$ to $K_{3, 3}$.
 
 The partitions are $\{\{a, e, i\}, \{c, g, k\}\}$.
 
