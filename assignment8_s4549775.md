@@ -19,6 +19,24 @@ $deg(v_2) = deg(v_4) = 4$, but $\{v_2, v_3\} \not \in E$.
 
 # 14
 ## d
+The adjacency matrix for $K_4$ looks like this:
+$A_{K_4} = \begin{bmatrix}
+	0 & 1 & 1 & 1\\
+	1 & 0 & 1 & 1\\
+	1 & 1 & 0 & 1\\
+	1 & 1 & 1 & 0\\
+\end{bmatrix}$
+
+If we want to know the paths between vertices of length 5, we need to calculate $A^5_{K_4}$.
+
+$A^5_{K_4} = \begin{bmatrix}
+	60 & 61 & 61 & 61\\
+	61 & 60 & 61 & 61\\
+	61 & 61 & 60 & 61\\
+	61 & 61 & 61 & 60\\
+\end{bmatrix}$
+
+There are 61 paths of length 5 between every two different vertices in $K_4$.
 
 # 15
 ## c
